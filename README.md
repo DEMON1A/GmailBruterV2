@@ -2,7 +2,9 @@
 Requirements: Python 3.x
 # Run The Script
 $git clone https://github.com/DEMON1A/GmailBruter
+
 $cd GmailBruter
+
 $python3 GmailBruter.py
 
 # Note
