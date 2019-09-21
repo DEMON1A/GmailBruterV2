@@ -1,5 +1,5 @@
 # GmailBruterV1.1
-Simple Script Used To Brute Force Gmail Accounts
+ = Simple Script Used To Brute Force Gmail Accounts
 
 # Requirements 
  - Python 3.x
