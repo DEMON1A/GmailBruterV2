@@ -7,7 +7,7 @@
 # Run The Script
 - git clone https://github.com/DEMON1A/GmailBruter
 
-- cd GmailBruter
+- cd GmailBruterV1.1
 
 - python3 GmailBruterV1.1.py
 
