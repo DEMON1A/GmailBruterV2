@@ -1,25 +1,27 @@
-# GmailBruterV1.1
+## GmailBruterV1.1
  - Simple Script Used To Brute Force Gmail Accounts
 
-# Requirements 
- - Python 3.x
+## Requirements 
+ > Python 3.x
  
-# Run The Script
-- git clone https://github.com/DEMON1A/GmailBruterV1.1
+## Run The Script
+```
+git clone https://github.com/DEMON1A/GmailBruterV1.1
 
-- cd GmailBruterV1.1
+cd GmailBruterV1.1
 
-- python3 GmailBruterV1.1.py
+python3 GmailBruterV1.1.py
+```
 
-# New Additions
+## New Additions
 - The Script Try A lot Of Words Without Stop
 
 - A Help Guide When You Run The Script
 
 - Fix Some Problems
 
-# Contact Me
- - Github: github.com/DEMON1A
+## Contact Me
+ - Github: [github.com/DEMON1A]
 
  - Facebook: facebook.com/mohamed.dief.1029
 
