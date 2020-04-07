@@ -16,9 +16,9 @@ help -- To Show Help Message
 set target -- To Set The Victim Email Address
 set time -- To Set Time Between Every 10 Faild Passwords
 set list -- To Set PassList Name
-show target -- To Set PassList Name
-show time -- To Set PassList Name
-show list -- To Set PassList Name
+show target -- To Show You Current Target
+show time -- To Show You Current Time
+show list -- The Show You Current List
 start -- To Start Brute Force Attack
 ```
 # Usage
