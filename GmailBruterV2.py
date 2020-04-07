@@ -62,9 +62,9 @@ def HelpGuide():
 	print("\tset target   --   To Set The Victim Email Address")
 	print("\tset time   --   To Set Time Between Every 10 Faild Passwords")
 	print("\tset list   --   To Set PassList Name ")
-	print("\tshow target   --   To Set PassList Name ")
-	print("\tshow time   --   To Set PassList Name ")
-	print("\tshow list   --   To Set PassList Name ")
+	print("\tshow target   --   To Show You Current Target ")
+	print("\tshow time   --   To Show You Current Time ")
+	print("\tshow list   --   To Show You Current List ")
 	print("\tstart   --   To Start Brute Force Attack\n")
 
 def ContactMe():
