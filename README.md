@@ -10,10 +10,19 @@ git clone https://github.com/DEMON1A/GmailBruterV1.1
 cd GmailBruterV1.1
 python3 GmailBruterV1.1.py
 ```
+# Commands
+```
+help -- To Show Help Message 
+set target -- To Set The Victim Email Address
+set time -- To Set Time Between Every 10 Faild Passwords
+set list -- To Set PassList Name
+show target -- To Set PassList Name
+show time -- To Set PassList Name
+show list -- To Set PassList Name
+start -- To Start Brute Force Attack
+```
 # Usage
-- Put The Email You Wanna To Brute Force It
-- Put The Pass List EX: PassList.txt
-
-# Contact Me
-- Github: github.com/DEMON1A
-- Email: mdaif1332@gmail.com
+- Set The Target Address
+- Set The Time Between Every 10 Fails
+- Set The WordList
+- Start The Brute Froce
