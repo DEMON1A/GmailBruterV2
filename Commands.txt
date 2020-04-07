@@ -1,0 +1,8 @@
+help
+set target
+set time
+set list
+show target
+show time
+show list
+start
