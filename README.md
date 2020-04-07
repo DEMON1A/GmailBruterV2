@@ -7,7 +7,7 @@
 # Download And Run This Tool
 ```
 git clone https://github.com/DEMON1A/GmailBruterV1.1
-cd GmailBruterV1.1
+cd GmailBruterV2
 python3 GmailBruterV1.1.py
 ```
 # Commands
