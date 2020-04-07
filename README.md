@@ -26,3 +26,5 @@ start -- To Start Brute Force Attack
 - Set The Time Between Every 10 Fails
 - Set The WordList
 - Start The Brute Froce
+# View
+![](Tool View/GmailBruter.png)
