@@ -1,4 +1,4 @@
-# GmailBruterV1.1
+# GmailBruterV2
  - **A Tool Written In Python That Brute Force Gmail Accounts**
 
 # Requirements 
