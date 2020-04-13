@@ -4,6 +4,7 @@ It Was Ma First Tool So !!
 I Will Clean The Code And Find A Way To Close The SMPT Connection After Some Words And Make A new Connection To Brute On LOL
 Maybe There Is Some Problems I Will Solve Every Shit Here
 Have Fun!
+Flag: flag{Hello_From_The_OTHER_SIDE_ROTT}
 '''
 import smtplib
 import os
