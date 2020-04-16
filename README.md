@@ -8,7 +8,7 @@
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
 cd GmailBruterV2
-python3 GmailBruterV1.1.py
+python3 GmailBruterV2.py
 ```
 # Commands
 ```
