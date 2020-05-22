@@ -4,7 +4,7 @@ It Was Ma First Tool So !!
 I Will Clean The Code And Find A Way To Close The SMPT Connection After Some Words And Make A new Connection To Brute On LOL
 Maybe There Is Some Problems I Will Solve Every Shit Here
 Have Fun!
-Flag: flag{Hello_From_The_OTHER_SIDE_ROTT}
+Flag: flag{Hello_From_The_OTHER_SIDE_ROTT} --
 '''
 import smtplib
 import os
@@ -14,7 +14,7 @@ import time
 Count = 0
 def Banner():
 	Up = "\t\t\t\t\t\t --------------------- \n"
-	Middle = "\t\t\t\t\t\t | GmailBruter(V1.1) |\n"
+	Middle = "\t\t\t\t\t\t | GmailBruter(V1.2) |\n"
 	Down = "\t\t\t\t\t\t --------------------- "
 	Ban = Up + Middle + Down
 	print(Ban)
