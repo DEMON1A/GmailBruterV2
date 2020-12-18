@@ -56,3 +56,9 @@ time:10
 ## What Should I Do If The SMTP Conncetion Disconnectes?
 - You Should Wait Sometime Until You Get Unblock From Gmail SMTP. Or Use Any VPN But I Would Suggest Using VPNs While Brute-Forcing.
 - Also, Don't Try a Lot Of Attemps On a Specefic Gmail Account. Even If You Got a Valid Password For It, Google Will Send a Waring Email Into Him/Her
+
+## How To Execute a Shell Command?
+- You Just Need To Add Your Command After `s-` For Example You Want To List The Files In The Current Directory. So You Gonna Add `ls` After `s-`, It Will Look Like This `s-ls`. Then The Program Will Return The Files In The Current Directory.
+
+## How To Make a Successful Brute-Forcing Attack?
+- I Did Increase The Attemps Of The Passowrd Brute-Force Here By Closing The Connection Everytime You Get *10* Bad Passwords. Then Create a New Conncetion. But That Isn't Gonna Help With Gmail That Much. You Have To Use a VPN Or Wait Sometime Between Every SMTP Server Disconnection. If You Kept Brute-Forcing Without STOP. Even If You Got The Valid Password Google Will Stop You And Send a Crtitcal Alert To The Account Owner. Telling Him To Change His Password.
