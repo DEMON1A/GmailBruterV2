@@ -35,6 +35,7 @@ s-{CMD} -- Executing Shell Command
 - More Cleaner Code.
 - Shell Command Execution Using The Tool
 - Loading Local Config To Aviod Adding The Settings Everytime
+- Solving Extra Spaces Issue By Replacing Them And Edit The Commands.
 
 ## How To Create a Config?
 - It's Pretty Easy Here. You Just Need To Create a Local File Looks Like This:
