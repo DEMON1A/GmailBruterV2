@@ -53,6 +53,6 @@ list:PassList.txt
 time:10
 ```
 
-## What Should I Do The SMTP Conncetion Disconnected
+## What Should I Do If The SMTP Conncetion Disconnectes?
 - You Should Wait Sometime Until You Get Unblock From Gmail SMTP. Or Use Any VPN But I Would Suggest Using VPNs While Brute-Forcing.
 - Also, Don't Try a Lot Of Attemps On a Specefic Gmail Account. Even If You Got a Valid Password For It, Google Will Send a Waring Email Into Him/Her
