@@ -1,8 +1,10 @@
 help
-set target
-set time
-set list
-show target
-show time
-show list
+settarget
+settime
+setlist
+showtarget
+showtime
+showlist
 start
+load
+exit
