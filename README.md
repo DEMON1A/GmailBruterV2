@@ -1,5 +1,6 @@
-# GmailBruterV2
+# GmailBruterV2 - Disabled
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
+ - It Turns Out That Gmail SMTP Is Adding Extra Layer Of Protection For Brute-Force Attacks. Even When You Have The Valid Password On Your Wordlist It Won't Allow You To Login That Will Flag Valid Results To Bad. I'm Sure All Of The Tools Suffers From The Same Issue. Until The New Update That Includes The Bypass I Will Mark This Tool As Disabled. So You Won't Waste Your Time With It Or With Any Other Tool.
  
 # Download And Run This Tool
 ```
