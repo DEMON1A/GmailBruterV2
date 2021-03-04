@@ -1,6 +1,7 @@
 # GmailBruterV2
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
  - It's time for a new update for this tool. stay tuned.
+ - GmailBruter isn't working at the current time. any attemps to brute-force gmail accounts won't work. if this issue won't fixed by the new algorithm i'm working on it. then this tool will be archived.
  
 # Download And Run This Tool
 ```
