@@ -1,7 +1,5 @@
 # GmailBruterV2
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
- - It's time for a new update for this tool. stay tuned.
- - GmailBruter isn't working at the current time. any attemps to brute-force gmail accounts won't work. if this issue won't fixed by the new algorithm i'm working on it. then this tool will be archived.
  
 # Download And Run This Tool
 ```
@@ -55,6 +53,9 @@ email:example@gmail.com
 list:PassList.txt
 time:10
 ```
+
+## When GmailBruter Creates a Successful Brute-Force Attack?
+- @Alvin-22 did point out that. GmailBruter will only work only on accounts with "less secure apps" option enabled on your account. at the current time to protect your gmail account from brute-force attacks all you need to disable this option if it's enabled on your account. for full details about disabling "less secure apps" option. please follow this article: https://support.google.com/accounts/answer/6010255?hl=en
 
 ## What Should I Do If The SMTP Conncetion Disconnectes?
 - You Should Wait Sometime Until You Get Unblock From Gmail SMTP. Or Use Any VPN But I Would Suggest Using VPNs While Brute-Forcing.
