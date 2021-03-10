@@ -2,7 +2,7 @@
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
 
 
-Table of Contents
+Table of Contents :smiley:
 =================
 
 - [Installation](#installation)
@@ -14,12 +14,12 @@ Table of Contents
 - [How To Make a Successful Brute-Forcing Attack?](#how-to-make-a-successful-brute-forcing-attack)
 - [What's New?](#whats-new)
 
-## Installation
+## Installation :point_left:
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
 cd GmailBruterV2
 ```
-## CLI Commands
+## CLI Commands :point_left:
 ```
 help -- To Show Help Message 
 set target -- To Set The Victim Email Address
@@ -36,7 +36,7 @@ exit -- Close The Shell
 s-{CMD} -- Executing Shell Command
 ```
 
-## How To Create a Config?
+## How To Create a Config? :confused:
 - It's Pretty Easy Here. You Just Need To Create a Local File Looks Like This:
 
 ```
@@ -53,20 +53,20 @@ list:PassList.txt
 time:10
 ```
 
-## When GmailBruter Creates a Successful Brute-Force Attack?
+## When GmailBruter Creates a Successful Brute-Force Attack? :open_mouth:
 - @Alvin-22 did point out that. GmailBruter will only work only on accounts with "less secure apps" option enabled on your account. at the current time to protect your gmail account from brute-force attacks all you need to disable this option if it's enabled on your account. for full details about disabling "less secure apps" option. please follow this article: https://support.google.com/accounts/answer/6010255?hl=en
 
-## What Should I Do If The SMTP Conncetion Disconnectes?
+## What Should I Do If The SMTP Conncetion Disconnectes? :worried:
 - You Should Wait Sometime Until You Get Unblock From Gmail SMTP. Or Use Any VPN But I Would Suggest Using VPNs While Brute-Forcing.
 - Also, Don't Try a Lot Of Attemps On a Specefic Gmail Account. Even If You Got a Valid Password For It, Google Will Send a Waring Email Into Him/Her
 
-## How To Execute a Shell Command?
+## How To Execute a Shell Command? :monocle_face:
 - You Just Need To Add Your Command After `s-` For Example You Want To List The Files In The Current Directory. So You Gonna Add `ls` After `s-`, It Will Look Like This `s-ls`. Then The Program Will Return The Files In The Current Directory.
 
-## How To Make a Successful Brute-Forcing Attack?
+## How To Make a Successful Brute-Forcing Attack? :slightly_frowning_face:
 - I Did Increase The Attemps Of The Passowrd Brute-Force Here By Closing The Connection Everytime You Get *10* Bad Passwords. Then Create a New Conncetion. But That Isn't Gonna Help With Gmail That Much. You Have To Use a VPN Or Wait Sometime Between Every SMTP Server Disconnection. If You Kept Brute-Forcing Without STOP. Even If You Got The Valid Password Google Will Stop You And Send a Crtitcal Alert To The Account Owner. Telling Him To Change His Password.
 
-## What's New?
+## What's New? :gift_heart:
 - Fixing Some Issues With The Authentication
 - Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
 - Shell Command Execution Using The Tool
