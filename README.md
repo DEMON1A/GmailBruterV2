@@ -1,11 +1,10 @@
-# GmailBruterV2
+# GmailBruterV2 :dizzy:
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
  
-# Download And Run This Tool
+# Installation
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
 cd GmailBruterV2
-python3 GmailBruterV2.py
 ```
 # Commands
 ```
@@ -23,19 +22,14 @@ exit -- Close The Shell
 
 s-{CMD} -- Executing Shell Command
 ```
-# Usage
-- Set The Target Address
-- Set The Time Between Every 10 Fails
-- Set The WordList
-- Start The Brute Froce
 
 # What's New?
-- Fixing Some Issues With The Autnetication
-- Increasing The SMTP Login Attemps By Closing The Connection And Sleeping
-- More Cleaner Code.
+- Fixing Some Issues With The Authentication
+- Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
 - Shell Command Execution Using The Tool
-- Loading Local Config To Aviod Adding The Settings Everytime
+- Loading Local Config To Aviod Adding The Same Setting Everytime.
 - Solving Extra Spaces Issue By Replacing Them And Edit The Commands.
+- Cleaner Code!
 
 ## How To Create a Config?
 - It's Pretty Easy Here. You Just Need To Create a Local File Looks Like This:
