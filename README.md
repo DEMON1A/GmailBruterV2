@@ -1,12 +1,26 @@
 # GmailBruterV2 :dizzy:
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
- 
+
+
+Table of Contents
+=================
+
+- [Installation](#installation)
+- [CLI Commands](#cli-commands)
+- [How To Create a Config?](#how-to-create-a-config)
+- [When GmailBruter Creates a Successful Brute-Force Attack?](#when-gmailbruter-creates-a-successful-brute-force-attack)
+- [What Should I Do If The SMTP Conncetion Disconnectes?](#what-should-i-do-if-the-smtp-connection-disconnects)
+- [How To Execute a Shell Command?](#how-to-execute-a-shell-command)
+- [How To Make a Successful Brute-Forcing Attack?](#how-to-make-a-successful-brute-forcing-attack)
+- [What's New?](#whats-new)
+
+<br>
 ## Installation
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
 cd GmailBruterV2
 ```
-## Commands
+## CLI Commands
 ```
 help -- To Show Help Message 
 set target -- To Set The Victim Email Address
@@ -22,14 +36,6 @@ exit -- Close The Shell
 
 s-{CMD} -- Executing Shell Command
 ```
-
-## What's New?
-- Fixing Some Issues With The Authentication
-- Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
-- Shell Command Execution Using The Tool
-- Loading Local Config To Aviod Adding The Same Setting Everytime.
-- Solving Extra Spaces Issue By Replacing Them And Edit The Commands.
-- Cleaner Code!
 
 ## How To Create a Config?
 - It's Pretty Easy Here. You Just Need To Create a Local File Looks Like This:
@@ -60,3 +66,11 @@ time:10
 
 ## How To Make a Successful Brute-Forcing Attack?
 - I Did Increase The Attemps Of The Passowrd Brute-Force Here By Closing The Connection Everytime You Get *10* Bad Passwords. Then Create a New Conncetion. But That Isn't Gonna Help With Gmail That Much. You Have To Use a VPN Or Wait Sometime Between Every SMTP Server Disconnection. If You Kept Brute-Forcing Without STOP. Even If You Got The Valid Password Google Will Stop You And Send a Crtitcal Alert To The Account Owner. Telling Him To Change His Password.
+
+## What's New?
+- Fixing Some Issues With The Authentication
+- Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
+- Shell Command Execution Using The Tool
+- Loading Local Config To Aviod Adding The Same Setting Everytime.
+- Solving Extra Spaces Issue By Replacing Them And Edit The Commands.
+- Cleaner Code!
