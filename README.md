@@ -1,12 +1,12 @@
 # GmailBruterV2 :dizzy:
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
  
-# Installation
+## Installation
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
 cd GmailBruterV2
 ```
-# Commands
+## Commands
 ```
 help -- To Show Help Message 
 set target -- To Set The Victim Email Address
@@ -23,7 +23,7 @@ exit -- Close The Shell
 s-{CMD} -- Executing Shell Command
 ```
 
-# What's New?
+## What's New?
 - Fixing Some Issues With The Authentication
 - Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
 - Shell Command Execution Using The Tool
