@@ -14,7 +14,6 @@ Table of Contents
 - [How To Make a Successful Brute-Forcing Attack?](#how-to-make-a-successful-brute-forcing-attack)
 - [What's New?](#whats-new)
 
-<br>
 ## Installation
 ```
 git clone https://github.com/DEMON1A/GmailBruterV2
