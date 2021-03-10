@@ -1,10 +1,3 @@
-'''
-I was about to remove this tool from github. but i decided to fix it and make it work for all cases
-it will take more time here. so if you gonna use this it gonna take sometime.
-
-Flag: flag{Cats_Can_BruteForce_Gmail_Accounts} --
-'''
-
 import smtplib , os , sys , time
 
 Count = 0
@@ -63,14 +56,14 @@ def HelpGuide():
 	print("\texit   --   Close The Shell")
 
 def ContactMe():
-	Gmail =  "mdaif1332@gmail.com" # Don't Perform The Brute-Force Attacks On My Email.
+	Gmail =  "mdaif1332@gmail.com" # Don't perform the brute-force attacks on my email.
 
 def StartShell():
 	Commands = []
 	Account = ''
 	Time = ''
 	PassList = ''
-	with open('Commands.txt','r') as CommandsFile:
+	with open(os.path.join("data" , "Commands") ,'r') as CommandsFile:
 		for Command in CommandsFile:
 			Command = Command.rstrip("\n")
 			Commands.append(Command)
