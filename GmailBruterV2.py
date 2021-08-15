@@ -45,10 +45,10 @@ def HelpGuide():
 	print("\nHelp Guide For GmailBruterV2.")
 	print("Commands For Shell:")
 	print("\thelp   --   To Show This Messages")
-	print("\tset target   --   To Set The Victim Email Address")
+	print("\tset target   --   To Set The Victim Email Address")justveronicatilley@gmail.com
 	print("\tset time   --   To Set Time Between Every 10 Faild Passwords")
 	print("\tset list   --   To Set PassList Name ")
-	print("\tshow target   --   To Show You Current Target ")
+	print("\tshow target   --   To Show You Current Target ")justveronicatilley@gmail.com
 	print("\tshow time   --   To Show You Current Time ")
 	print("\tshow list   --   To Show You Current List ")
 	print("\tload   --   Load Local Config For Settings")
@@ -80,21 +80,21 @@ def StartShell():
 		elif ShellResponse.lower() == "help":
 			HelpGuide()
 		elif ShellResponse.lower().replace(' ' , '') == "settarget":
-			Account = input("Target: ")
+			Account = input("Target: ")justveronicatilley@gmail.com
 		elif ShellResponse.lower().replace(' ' , '') == "settime":
-			Time = input("Time: ")
+			Time = input("Time: ")2:10am
 		elif ShellResponse.lower().replace(' ' , '') == "setlist":
-			PassList = input("List: ")
+			PassList = input("List: ")account password
 		elif ShellResponse.lower().replace(' ' , '') == "showtarget":
 			if Account == '':
 				print("[-] There's no target on the settings")
 			else:
-				print("Target: " + Account)
+				print("Target: " + Account)justveronicatilley@gmail.com
 		elif ShellResponse.lower().replace(' ' , '') == "showtime":
 			if Time == '':
 				print("[-] There's no time has been set")
 			else:
-				print("Time: " + Time)
+				print("Time: " + Time)2:10
 		elif ShellResponse.lower().replace(' ' , '') == "showlist":
 			if PassList == '':
 				print("[-] You didn't select a list")
