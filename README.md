@@ -66,6 +66,9 @@ time:10
 ## How To Make a Successful Brute-Forcing Attack? :slightly_frowning_face:
 - I Did Increase The Attemps Of The Passowrd Brute-Force Here By Closing The Connection Everytime You Get *10* Bad Passwords. Then Create a New Conncetion. But That Isn't Gonna Help With Gmail That Much. You Have To Use a VPN Or Wait Sometime Between Every SMTP Server Disconnection. If You Kept Brute-Forcing Without STOP. Even If You Got The Valid Password Google Will Stop You And Send a Crtitcal Alert To The Account Owner. Telling Him To Change His Password.
 
+## Contact:
+- If you need any help feel free to contact me, otherwise don't contact me about side-jobs or any sort of things like "I wanna hack my uncle's phone" your message will just get ignored
+
 ## What's New? :gift_heart:
 - Fixing Some Issues With The Authentication
 - Increasing The SMTP Login Attemps By ReCreating The Connection and Sleeping
