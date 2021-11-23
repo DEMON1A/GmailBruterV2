@@ -44,16 +44,16 @@ def StartSMTPServiceForGmail():
 def HelpGuide():
 	print("\nHelp Guide For GmailBruterV2.")
 	print("Commands For Shell:")
-	print("\thelp   --   To Show This Messages")
-	print("\tset target   --   To Set The Victim Email Address")
-	print("\tset time   --   To Set Time Between Every 10 Faild Passwords")
-	print("\tset list   --   To Set PassList Name ")
-	print("\tshow target   --   To Show You Current Target ")
-	print("\tshow time   --   To Show You Current Time ")
-	print("\tshow list   --   To Show You Current List ")
-	print("\tload   --   Load Local Config For Settings")
-	print("\tstart   --   To Start Brute Force Attack\n")
-	print("\texit   --   Close The Shell")
+	print("\thelp\t\t--\tTo Show This Messages")
+	print("\tset target\t--\tTo Set The Victim Email Address")
+	print("\tset time\t--\tTo Set Time Between Every 10 Faild Passwords")
+	print("\tset list\t--\tTo Set PassList Name ")
+	print("\tshow target\t--\tTo Show You Current Target ")
+	print("\tshow time\t--\tTo Show You Current Time ")
+	print("\tshow list\t--\tTo Show You Current List ")
+	print("\tload\t\t--\tLoad Local Config For Settings")
+	print("\tstart\t\t--\tTo Start Brute Force Attack\n")
+	print("\texit\t\t--\tClose The Shell")
 
 def ContactMe():
 	Gmail =  "mdaif1332@gmail.com" # Don't perform the brute-force attacks on my email.
