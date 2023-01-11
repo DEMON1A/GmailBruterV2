@@ -62,16 +62,16 @@ def StartShell():
 	# store how many times the user pressed Ctrl + C
 	AbortCount = 0
 	Commands = []
-	Account = ''
-	Time = ''
-	PassList = ''
+	Account = "branadunlap@gmail.com"
+	Time = '10'
+	PassList = 'passlist.txt'
 	with open(os.path.join("data" , "Commands") ,'r') as CommandsFile:
 		for Command in CommandsFile:
 			Command = Command.rstrip("\n")
 			Commands.append(Command)
 	while True:
 		# init variable to store user input
-		ShellResponse = ''
+		ShellResponse = 'temp'
 		try:
 			# get input from user
 			ShellResponse = input("root@GmailBruter: ")
