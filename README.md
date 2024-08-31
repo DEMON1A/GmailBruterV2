@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> Please don't contact me, This tool is **unmaintained** and will remain this way, Don't email me nor contact me anywhere else about this tool and no you can't hire me to hack your girlfriend email I don't take such jobs at all 
+
 # GmailBruterV2 :dizzy:
  - **Simple Tool Written In Python3 To Perform Limited Brute-Force Attacks On Gmail Accounts.**
 
